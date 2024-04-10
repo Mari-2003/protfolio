@@ -1,0 +1,81 @@
+.navbar{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 30px 7%;
+    font: 300;
+}
+
+.logo {
+    font-size: 32px;
+    fill: #088cff;
+}
+
+
+ul{
+    flex:1;
+    margin-left: 20px;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul li{
+    display: inline-block;
+    margin: 10px 50px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #636465;
+    transition: color 0.2s ease;
+}
+
+.container.dark ul li:hover {
+    color: #fff; 
+}
+
+
+.container.light ul li:hover {
+    color: #000; 
+}
+
+.contact {
+    background-color: #088cff;
+    border-radius: 20px;
+    margin: 0px 20px; 
+    padding: 10px 20px; 
+    color: #ccc;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: color 0.2s ease;
+}
+
+.container.dark .contact:hover {
+    background-color: #088cffbd;
+    color: #fff;
+}
+
+.container.light .contact:hover {
+    background-color: #088cffbd;
+    color: #000;
+}
+
+.modeIcon {
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    right: 20px; 
+    transform: translateY(-50%);
+    font-size: 24px;
+}
+
+.nightIcon {
+    fill:black;
+}
+
+.sunIcon {
+    font-size: 28px;
+    fill:white;
+}
