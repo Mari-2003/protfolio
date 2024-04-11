@@ -11,37 +11,37 @@
     padding: 40px;
 }
 
-h2{
+.content h2{
 font-size: 21px;
 color:#fff ;
 margin-bottom: 10px;
 
 }
 
-.container.light h2{
+.container.light .content h2{
     color: #080C0F;
 }
 
-h1{
+.content h1{
     font-size: 76px;
     color: #088CFF;
     margin-bottom: 10px;
 }
 
 
-p{
+.content p{
     text-align: justify;
     font-size: 21px;
     color: #636465;
     margin: 10px;
 }
 
-.container.light p{
+.container.light .content p{
     color:rgba(8, 12, 15, 0.459); 
 }
 
 
-button{
+.content button{
     margin: 10px;
     padding: 20px 40px;
     border-radius: 20px;
@@ -50,21 +50,21 @@ button{
     transition:color 0.2s ease ;
 }
 
-.container.dark button{
+.container.dark .content button{
     background-color: #080808;
     color: #088CFF;
 }
-.container.light button{
+.container.light .content button{
     background-color: #f1f1f1;
     color: #088CFF;
 }
 
-.container.dark button:hover{
+.container.dark .content button:hover{
    background-color:#088CFF;
    color: #f1f1f1;
 }
 
-.container.light button:hover{
+.container.light .content button:hover{
     background-color:#088CFF;
     color: #f1f1f1;
  }
@@ -93,10 +93,52 @@ button{
 }
 
 
-.social{
+.social {
     width: 100vw;
-    align-items: center;
+    height:min-content;
+    display: flex; 
+    background-color:  rgba(99, 100, 101, 0.438);;
+    color: #fff;
+}
+
+.social ul {
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    margin:30px;
+    padding: 0px;
+    gap: 20rem;
+    font-weight:normal;
+}
+
+
+
+.social ul li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 10px;
+    flex: 1;
+}
+
+.social ul li svg {
+    margin-right: 10px; 
+}
+.social ul li:nth-child(1) svg {
+    font-size: 40px; 
+    margin-left: 40px;
+}
+
+
+.social ul li:nth-child(2) svg {
+    font-size: 50px; 
+}
+
+
+.social ul li:nth-child(3) svg {
+    font-size: 40px; 
+}
+
+
+.container.light .social {
+    background-color: #fff;
+    color: #080808;
 }

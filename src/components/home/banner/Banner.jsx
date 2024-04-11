@@ -42,9 +42,11 @@ export const Banner = () => {
       </div>
       </div>
       <div className='social'> 
-        <a href="www.linkedin.com/in/mariappan-n-5a8657261" target="_blank" rel="noopener noreferrer"><FaLinkedin /> Mariappan</a> 
-        <a href="https://github.com/Mari-2003" target="_blank" rel="noopener noreferrer"><LiaGithub /> Mari-2003</a>
-        <a href="mailto:maribca408@gmail.com"><FiMail /> maribca408@gmail</a>
+      <ul>
+        <li><FaLinkedin /><span>Mariappan.N</span></li>
+        <li><LiaGithub /><span>Mari-2003</span></li>
+        <li><FiMail /><span>maribca408@gmail.com</span></li>
+      </ul>
       </div>
      
     </div>

@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-between ;
     padding: 30px 7%;
-    font: 300;
+    font-weight: 300;
 }
 
 .logo {
@@ -14,7 +14,7 @@
 }
 
 
-ul{
+.heading{
     flex:1;
     margin-left: 20px;
     list-style: none;
@@ -23,7 +23,7 @@ ul{
     justify-content: flex-end;
 }
 
-ul li{
+.heading li{
     display: inline-block;
     margin: 10px 50px;
     font-size: 18px;
@@ -32,12 +32,12 @@ ul li{
     transition: color 0.2s ease;
 }
 
-.container.dark ul li:hover {
+.container.dark .heading  li:hover {
     color: #fff; 
 }
 
 
-.container.light ul li:hover {
+.container.light .heading  li:hover {
     color: #000; 
 }
 

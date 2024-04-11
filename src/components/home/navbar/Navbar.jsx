@@ -12,7 +12,7 @@ export const Navbar = ({ theme, setTheme }) => {
   return (
     <div className='navbar'>
       <FaMediumM className='logo' />
-      <ul>
+      <ul className='heading'>
         <li>HOME</li>
         <li>ABOUT ME</li>
         <li>PROJECTS</li>
