@@ -1,0 +1,60 @@
+.flexCEnter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1pc 3.5pc;
+}
+.nav-item a {
+    margin: 0 40px;
+    color: #636465;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.nav-item a:hover {
+    color: #f1f1f1;
+}
+.logo{
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); 
+    color: #088cff;
+}
+
+.nightIcon{
+    color: #080C0F;
+}
+
+.parentContainer .contactButton {
+    margin-right: calc(2.5pc + (5 - 2.5) * ((100vw - 300px) / (1600 - 300)));
+    background-color: #088cffab;
+    border-radius: 20px;
+    padding: 0.7pc 1.5pc;
+    color: #f1f1f1cc;
+    transition: color 0.3s;
+    border: none;
+}
+.parentContainer .contactButton:hover {
+    background-color:#088cff;
+    color:#f1f1f1;
+
+}
+.modeIcon{
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); 
+}
+
+.lightMode .nav-item a {
+    color: #636465 !important;
+    transition: color 0.3s !important;
+  }
+  .lightMode .nav-item a:hover {
+    color: #080C0F !important; /* Adjust as needed */
+  }
+ 
+  .lightMode .parentContainer .contactButton {
+    background-color: #088cffab;
+    transition: color 0.3s; /* Adjust as needed */
+  }
+  .lightMode .parentContainer .contactButton:hover {
+    color: #080C0F; /* Adjust as needed */
+  }
+
+

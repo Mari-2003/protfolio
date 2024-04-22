@@ -1,20 +1,12 @@
 import './App.css';
-import { AboutUs } from './components/aboutus/AboutUs';
-import { Contact } from './components/contact/Contact';
-import { Footer } from './components/footer/Footer';
-import { Navbar } from './components/navbar/Navbar';
-import { Projects } from './components/projects/Projects';
+import { Route, Routes } from 'react-router-dom'; 
+import  Home  from './components/Home';
 
 function App() {
   return (
-   <>
-   <Navbar />
-   <Banner />
-   <AboutUs />
-   <Projects />
-   <Contact />
-   <Footer />
-   </>
+      <Routes>
+        <Route path=''  index  element={<Home />} />
+      </Routes>
   );
 }
 
