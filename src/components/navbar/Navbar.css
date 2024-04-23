@@ -46,15 +46,15 @@
     transition: color 0.3s !important;
   }
   .lightMode .nav-item a:hover {
-    color: #080C0F !important; /* Adjust as needed */
+    color: #080C0F !important; 
   }
  
   .lightMode .parentContainer .contactButton {
     background-color: #088cffab;
-    transition: color 0.3s; /* Adjust as needed */
+    transition: color 0.3s; 
   }
   .lightMode .parentContainer .contactButton:hover {
-    color: #080C0F; /* Adjust as needed */
+    color: #080C0F; 
   }
 
 

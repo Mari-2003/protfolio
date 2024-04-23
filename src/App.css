@@ -1,13 +1,11 @@
 .themeColor.light {
     width: 100%;
-    height: 100vh;
     background-color: #f1f1f1;
     transition: 0.5s;
 }
 
 .themeColor.dark{
     width: 100%;
-    height: 100vh;
     color: #f1f1f1;
     background-color: #080C0F;
     transition: 0.5s;
