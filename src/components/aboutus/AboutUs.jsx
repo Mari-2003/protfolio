@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboutUs.css'
-import Profile1 from '../../assets/profile1.jpg';
+import profile from '../../assets/profile.png';
 import { FaLinkedin } from "react-icons/fa";
 import { LiaGithub } from "react-icons/lia";
 
@@ -13,8 +13,8 @@ export const AboutUs = () => {
             <h1>ABOUT ME</h1>
           </div>
           <div>
-            <div>
-            <img src={Profile1} alt='' className='profileIcon img-fluid' />
+            <div className='aboutImage'>
+            <img src={profile} alt='' className='profileIcon img-fluid' />
             </div>
             <div>
               <p>

@@ -3,7 +3,7 @@ import './Banner.css'
 import { FaLinkedin } from "react-icons/fa";
 import { LiaGithub } from "react-icons/lia";
 import { FiMail } from "react-icons/fi";
-import Profile1 from '../../assets/profile1.jpg';
+import bannerImg from '../../assets/bannerImg.jpg';
 import MariappanResume from '../../assets/MariappanResume.pdf'
 
 export const Banner = () => {
@@ -40,8 +40,8 @@ export const Banner = () => {
         </div>
       </div>
       <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
-        <div className='text-center'>
-          <img src={Profile1} alt='' className='profileIcon img-fluid' />
+        <div className='contentImage'>
+          <img src={bannerImg} alt='' className='profileIcon img-fluid' />
         </div>
       </div>
     </div>
