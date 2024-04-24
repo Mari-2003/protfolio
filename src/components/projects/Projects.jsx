@@ -5,7 +5,7 @@ import architect from '../../assets/architect.png'
 export const Projects = () => {
   return (
     <div className='content-fluid'>
-      <div className='row align-items-center'>
+      <div className='row align-items-center projects'>
         <div>
           <h1>MY PROJECTS</h1>
         </div>

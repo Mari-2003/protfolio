@@ -29,8 +29,8 @@ export const Banner = () => {
     <div className='container-fluid'>
     <div className='row align-items-center banner'>
       <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
-        <div className='content'>
-          <h2>Hi! I am Mariappan</h2>
+        <div className='bannerleft'>
+          <h4>Hi! I am Mariappan</h4>
           <h1>I AM FULL STACK</h1>
           <h1>DEVELOPER</h1>
           <p>Experienced software developer proficient in React and Node.js.

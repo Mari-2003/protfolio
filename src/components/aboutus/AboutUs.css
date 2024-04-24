@@ -1,1 +1,30 @@
 
+  .about {
+    width: 100%;
+    padding: 1pc 3.5pc;
+    text-align: center;
+  }
+  
+  .aboutHeading {
+    margin-bottom: 20px;
+  }
+  
+  .aboutContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .aboutText {
+    margin-left: 20px; 
+  }
+  
+  .socialIcons {
+    margin-top: 20px;
+  }
+  
+  .socialIcons a {
+    margin-right: 20px ;
+  }
+  
