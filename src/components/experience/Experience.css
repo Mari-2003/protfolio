@@ -1,0 +1,21 @@
+.experience {
+    width:100%;
+    padding: 1pc 3.5pc;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.company{
+    display: flex;
+}
+
+.companyName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.companyTitle{
+    display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}

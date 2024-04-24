@@ -1,0 +1,9 @@
+.footer{
+    margin-top: 100px;
+}
+.footerICons{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}

@@ -27,8 +27,9 @@ export const Banner = () => {
 
   return (
     <div className='container-fluid'>
-    <div className='row align-items-center banner'>
+    <div className='row align-items-center '>
       <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
+      <div className='banner'>
         <div className='bannerleft'>
           <h4>Hi! I am Mariappan</h4>
           <h1>I AM FULL STACK</h1>
@@ -39,19 +40,27 @@ export const Banner = () => {
           <button onClick={handleHireMe}>HIRE ME</button>
         </div>
       </div>
-      <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
+      
+    </div>
+    <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
         <div className='contentImage'>
           <img src={bannerImg} alt='' className='profileIcon img-fluid' />
         </div>
       </div>
-    </div>
-    <div className='social'>
-      <ul>
-        <li><FaLinkedin /><span>Mariappan.N</span></li>
-        <li><LiaGithub  /><span>Mari-2003</span></li>
-        <li><FiMail  /><span>maribca408@gmail.com</span></li>
-      </ul>
-    </div>
   </div>
+  <div className='row'>
+    <div className='col-xl-4 col-lg-4 col-md-4 col-12'>
+    <a><FaLinkedin /><span>Mariappan.N</span></a>
+    </div>
+    <div className='col-xl-4 col-lg-4 col-md-4 col-12'>
+    <a><LiaGithub  /><span>Mari-2003</span></a>
+    </div>
+    <div className='col-xl-4 col-lg-4 col-md-4 col-12'>
+    <a><FiMail  /><span>maribca408@gmail.com</span></a>
+    </div>
+    </div>
+
+  </div>
+  
   )
 }

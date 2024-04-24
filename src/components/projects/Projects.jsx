@@ -5,15 +5,18 @@ import architect from '../../assets/architect.png'
 export const Projects = () => {
   return (
     <div className='content-fluid'>
-      <div className='row align-items-center projects'>
-        <div>
+        <div className='projects'>
+        <div className='heading'>
           <h1>MY PROJECTS</h1>
         </div>
         <div>
-          <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
+        <div className='row'>
+          <div className='col-xl-4 col-lg-4 col-md-4 col-12'>
             <div> 
               <img src ={architect} className='img-fluid'/>
             </div>
+            </div>
+            <div className='col-xl-8 col-lg-8 col-md-8 col-12'>
             <div>
               <h3>Archie Home Decors.</h3>
               <h4>Next JS - React JS - Redux - TailwindCss - Javascript</h4>
@@ -21,7 +24,7 @@ export const Projects = () => {
             </div>
           </div>
         </div>
-
+        </div>
       </div>
     </div>
   )
