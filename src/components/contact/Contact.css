@@ -7,9 +7,41 @@
 }
 
 .contactPage{
-    margin-top: 50px;
     display: flex;
+    margin-top: 50px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+}
+.contactButton{
+    margin-top: 30px;
+    padding: 1.5pc 4pc;
+    border: none;
+    background-color: #088cff;
+    border-radius: 10px;
+    color: #f1f1f1;;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+.contactButton:hover{
+    color: #636465;
+
+
 }
 
+.contactSocialIcons{
+    display: block;
+    text-align: end;
+}
+.contactAbout{
+    padding: 0.5pc 2.5pc;
+    align-items: center;
+}
+.contactAboutIcons{
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.contactImageIcons{
+    border-radius: 20%;
+}

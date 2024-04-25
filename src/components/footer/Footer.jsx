@@ -5,10 +5,10 @@ import footerIcon from '../../assets/footerIcon.png'
 export const Footer = () => {
   return (
     <div className='container-fluid'>
-      <div className='row align-items-center'>
+      <div className='row'>
         <div className='footer'>
           <div className='footerImg'>
-            <img src={footerIcon} className=' footerICons image-fluid' />
+            <img src={footerIcon} alt="" className=' footerICons img-fluid' />
           </div>
           <div className='footerText'>
             <h1>"Thanks for Scrolling"</h1>

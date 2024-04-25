@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import contactImage from "../../assets/contactImage.jpg"
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
-export const Contact = () => {
+export const Contact = ({theme}) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -48,13 +51,14 @@ export const Contact = () => {
           <h1>GET IN TOUCH</h1>
         </div>
         <div>
-          <form onSubmit={handleSubmit}>
-            <div className='row align-items-center'>
+        <form onSubmit={handleSubmit}>
+            <div className='row'>
               <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
                 <div className='contactPage'>
                 <div>
-                  <h2>THAT'S ALL ABOUT </h2>
-                  <h2>CONTACT ME..</h2>
+                  <h3>THAT'S ALL ABOUT </h3>
+                  <h3>CONTACT ME..</h3>
+                  <img src={contactImage} alt="" className=' contactImageIcons img-fluid'/>
                 </div>
                 <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
                 <div>
@@ -93,16 +97,23 @@ export const Contact = () => {
                     placeholder='Your Message'
                     required
                   />
-                  <button type='submit'>Send</button>
+                  <button className='contactButton' type='submit'>Send</button>
                 </div>
               </div>
                 </div>
               </div>
             </div>
-          </form>
+            </form>
         </div>
-        <div>
-          {/* Display social icons */}
+        <div className='contactSocialIcons'>
+        <div className='contactAbout'>
+      <FaLinkedin className='contactAboutIcons' />
+        <span>Mariappan.N</span>
+        </div>
+        <div className='contactAbout'>
+        <FaGithub className='contactAboutIcons' />
+        <span>Mari-2003</span>
+        </div>
         </div>
       </div>
     </div>
