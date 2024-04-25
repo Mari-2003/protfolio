@@ -6,3 +6,10 @@
     margin-top: 100px;
 }
 
+.contactPage{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

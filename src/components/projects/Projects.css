@@ -5,3 +5,23 @@
     padding: 1pc 3.5pc;
     margin-top: 100px;
 }
+
+.projectContent{
+    margin-top: 50px;
+}
+
+.projectImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.projectContent p {
+    margin-top: 20px;
+    text-align: justify;
+  }
+.projectContent h4 {
+    color: #088cff;
+}

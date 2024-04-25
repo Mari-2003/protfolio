@@ -4,20 +4,26 @@ export const Experience = () => {
   return (
     <div className="container-fluid">
       <div className="experience">
-      <div className="heading">
-            <h1>EXPERIENCE</h1>
-          </div>
-          <div>
-          <div className="row">
-        <div className="col-xl-6 col-lg-6 col-md-6 col-12">
-            <div className="company1">
+        <div className="heading">
+          <h1>EXPERIENCE</h1>
+        </div>
+          <div className="experienceContent">
+            <div className="company">
               <div className="companyName">
-                <h3>Icanio Technologies</h3>
-                <h3>(09/2023 - 03/2024)</h3>
+                <div>
+                  <h3>Icanio Technologies</h3>
+                </div>
+                <div>
+                  <h3>(09/2023 - 03/2024)</h3>
+                </div>
               </div>
-              <div className="companyTitle" >
-                <h3>Software Development Intern</h3>
-                <h3>Tirunelveli</h3>
+              <div className="companyTitle">
+                <div>
+                  <h3>Software Development Intern</h3>
+                </div>
+                <div>
+                  <h3>Tirunelveli</h3>
+                </div>
               </div>
               <p>
                 Proficient in Node.js, Nest.js, and React.js after six months of
@@ -37,14 +43,22 @@ export const Experience = () => {
                 ERDs, and API documentation including sequence diagrams.
               </p>
             </div>
-            <div className="company2">
+            <div className="company">
               <div className="companyName">
-                <h3>That's My child </h3>
-                <h3>(12/2022 - 03/2023)</h3>
+                <div>
+                  <h3>That's My child</h3>
+                </div>
+                <div>
+                  <h3>(12/2022 - 03/2023)</h3>
+                </div>
               </div>
               <div className="companyTitle">
-                <h3>Graduation Traniee</h3>
-                <h3>Alwarkurichi</h3>
+                <div>
+                  <h3>Graduation Traniee</h3>
+                </div>
+                <div>
+                  <h3>Alwarkurichi</h3>
+                </div>
               </div>
               <p>
                 Learned GitHub for version control, Node.js for backend
@@ -57,11 +71,8 @@ export const Experience = () => {
                 English sessions to improve communication skills.
               </p>
             </div>
-          </div>
         </div>
       </div>
-
-      </div>
-            </div>
+    </div>
   );
 };
