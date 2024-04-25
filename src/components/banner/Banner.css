@@ -26,7 +26,74 @@
     display: block;
     margin: auto;
   }
-  
+
+  .bannerleft h4 {
+    letter-spacing: 1px;
+    font-weight: 400; 
+  }
+
 .bannerleft h1{
-  font-size: 60px
+  font-size: 60px;
+  color: #088cff;
+  font-weight:700;
 }
+.bannerleft p{
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+.bannerButton{
+  display: flex;
+}
+.bannerButton button:nth-child(2) {
+  margin-left: 10%;
+}
+
+.bannerleft button {
+  margin-top: 30px;
+  padding: 1.5pc 4pc;
+  border: 1px solid #088cff;
+  background-color: #080c0f;
+  border-radius: 10px;
+  color:#088cff;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.bannerleft button:hover{
+  background-color: #088cff ;
+  color: #f1f1f1;
+ }
+
+.lightMode .bannerleft h1{
+  color: #088cff !important;
+}
+
+.lightMode .bannerleft button{
+  background-color: #f1f1f1 !important;
+
+}
+
+.lightMode .bannerleft button:hover{
+  background-color: #088cff !important;
+
+}
+
+.bannerFooter {
+  margin-top: 50px;
+  background-color: #636465;
+  font-weight: 500;
+  padding: 0.5pc 3.5pc;
+}
+
+.bannerFooter .bannerIcons{
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.lightMode .bannerFooter{
+  background-color:white !important;
+
+}
+
+

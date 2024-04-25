@@ -7,7 +7,7 @@ export const Projects = () => {
     <div className='content-fluid'>
         <div className='projects'>
         <div className='heading'>
-          <h1>MY PROJECTS</h1>
+          <h1><span className="aboutMeLetter">MY</span> PROJECTS</h1>
         </div>
         <div>
         <div className='row'>

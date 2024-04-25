@@ -6,7 +6,7 @@ import { FiMail } from "react-icons/fi";
 import bannerImg from '../../assets/bannerImg.jpg';
 import MariappanResume from '../../assets/MariappanResume.pdf'
 
-export const Banner = () => {
+export const Banner = ({ theme }) => {
 
   const handleHireMe = () => {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -26,6 +26,7 @@ export const Banner = () => {
 
 
   return (
+    <div>
     <div className='container-fluid'>
     <div className='row align-items-center '>
       <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
@@ -36,8 +37,10 @@ export const Banner = () => {
           <h1>DEVELOPER</h1>
           <p>Experienced software developer proficient in React and Node.js.
             Skilled in creating scalable web applications with a focus on high-quality code. Strong in both front-end and back-end development, with a collaborative mindset.</p>
+          <div className='bannerButton'>
           <button onClick={handleResumeDownload}>RESUME</button>
           <button onClick={handleHireMe}>HIRE ME</button>
+          </div>
         </div>
       </div>
       
@@ -48,18 +51,20 @@ export const Banner = () => {
         </div>
       </div>
   </div>
+  </div>
+  <div className='bannerFooter'>
   <div className='row'>
     <div className='col-xl-4 col-lg-4 col-md-4 col-12'>
-    <a><FaLinkedin /><span>Mariappan.N</span></a>
+    <a><FaLinkedin className='bannerIcons' /><span>Mariappan.N</span></a>
     </div>
     <div className='col-xl-4 col-lg-4 col-md-4 col-12'>
-    <a><LiaGithub  /><span>Mari-2003</span></a>
+    <a><LiaGithub className='bannerIcons' /><span>Mari-2003</span></a>
     </div>
     <div className='col-xl-4 col-lg-4 col-md-4 col-12'>
-    <a><FiMail  /><span>maribca408@gmail.com</span></a>
+    <a><FiMail className='bannerIcons' /><span>maribca408@gmail.com</span></a>
     </div>
     </div>
-
+  </div>
   </div>
   
   )

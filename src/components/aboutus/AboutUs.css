@@ -10,15 +10,64 @@
   .heading{
     display: flex;
     justify-content: center;
-
 }
-  
+.heading h1{
+  font-size: 60px;
+  font-weight: 900;
+}
+.aboutMeLetter {
+  color: #088cff;
+}
+
+.lightMode .aboutMeLetter {
+  color: #088cff !important;
+}
   .aboutImage{
-    border-radius: 30%;
-    width: 50%;
-    height: 50%;
+    margin-top: 30px;
+    width: 60%;
+  }
+  .aboutText{
+    margin-top: 70px;
+  }
+  .seeMoreBtn{
+    margin-top: 30px;
+    padding: 1.5pc 4pc;
+    border: none;
+    background-color: #088cff;
+    border-radius: 10px;
+    color: #f1f1f1;;
+    transition: color 0.3s;
+    font-weight: 500;
+  }
+
+  .seeMoreBtn:hover{
+    color:#f1f1f1
   }
 
   
 
-  
+  .aboutSocialIcons{
+    margin-top: 30px;
+    padding: 1pc 3.5pc;
+    display:block;
+    width:30%
+  }
+  .aboutLink{
+    display: flex;
+    margin-top: 20px;
+    padding: 1pc 2.5pc;
+    align-items: center;
+    background-color: #088cff;
+    border-radius: 10px;
+  }
+
+  .aboutLink span,.aboutLink a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+
+  .aboutLinkIcons {
+    margin-right: 10px;
+    font-size: 40px;
+  }
