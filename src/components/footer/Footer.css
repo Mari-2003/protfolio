@@ -2,13 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
+    position: relative;
     
 }
-.footerImg{
-    background-color: #088cff; 
-  height: 2px; 
-  width: 100%
-}
+
 .footerICons{
     display: flex;
     align-items: center;
@@ -18,4 +15,26 @@
 .footerText{
     margin-top: 30px;
 
+}
+.footerImg {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+   
+}
+
+.footerImg span{
+    width:45%;
+    height:2px;
+    background-color: #088cff;
+    position: absolute;
+
+}
+
+.line1{
+    left:0;
+}
+
+.line2{
+    right:0;
 }

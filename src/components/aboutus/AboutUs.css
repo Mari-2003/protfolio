@@ -24,28 +24,15 @@
 }
   .aboutImage{
     margin-top: 30px;
-    width: 60%;
   }
   .aboutText{
-    margin-top: 70px;
-    overflow: hidden;
-  max-height: 300px; 
-  }
-  .seeMoreBtn{
+    padding: 0px 2pc;
     margin-top: 30px;
-    padding: 1.5pc 4pc;
-    border: none;
-    background-color: #088cff;
-    border-radius: 10px;
-    color: #f1f1f1;;
-    transition: color 0.3s;
-    font-weight: 500;
   }
 
-  .seeMoreBtn:hover{
-    color:#f1f1f1
+  .aboutText p{
+    text-align: justify;
   }
-
   
 
   .aboutSocialIcons{

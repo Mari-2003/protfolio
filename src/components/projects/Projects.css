@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 
@@ -24,4 +24,8 @@
   }
 .projectContent h4 {
     color: #088cff;
+}
+
+.projectText{
+    padding: 0px 2pc;
 }

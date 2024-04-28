@@ -1,47 +1,83 @@
-.contact{
+.contact {
     align-items: center;
     justify-content: space-between;
     width: 100%;
     padding: 1pc 3.5pc;
     margin-top: 100px;
-}
-
-.contactPage{
+  }
+  
+  .contactPage {
     display: flex;
     margin-top: 50px;
     align-items: center;
-    justify-content: space-between;
-
-}
-.contactButton{
+  }
+  
+  .contactButton {
     margin-top: 30px;
     padding: 1.5pc 4pc;
     border: none;
     background-color: #088cff;
     border-radius: 10px;
-    color: #f1f1f1;;
+    color: #f1f1f1;
     transition: color 0.3s;
     font-weight: 500;
-}
-.contactButton:hover{
+  }
+  
+  .contactButton:hover {
     color: #636465;
-
-
-}
-
-.contactSocialIcons{
+  }
+  
+  .contactSocialIcons {
     display: block;
     text-align: end;
-}
-.contactAbout{
+  }
+  
+  .contactAbout {
     padding: 0.5pc 2.5pc;
     align-items: center;
-}
-.contactAboutIcons{
+  }
+  
+  .contactAboutIcons {
     font-size: 40px;
     margin-right: 10px;
-}
-
-.contactImageIcons{
-    border-radius: 20%;
-}
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .w-full {
+    width: 100%;
+    margin: 30px 0;
+  }
+  
+  .text input,
+  .inputStyle input,
+  .inputStyle textarea {
+    background: #636465;
+    border: none;
+    height: 50px;
+    padding: 2pc 12px;
+    border-radius: 10px;
+  }
+  
+  .textArea {
+    width: 100%;
+    height: 322px !important;
+    padding: 12px !important;
+  }
+  
+  .ml-40 {
+    margin-left: 40px !important;
+  }
+  
+  .rightSide {
+    padding: 0px 2pc;
+  }
+  
+ .light .text input,
+ .inputStyle input,
+ .inputStyle textarea{
+    background: white;
+ }

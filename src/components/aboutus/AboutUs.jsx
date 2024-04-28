@@ -1,16 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./AboutUs.css";
-import aboutImg from "../../assets/aboutImg.png";
+import aboutImg from "../../assets/New Project (2).svg";
+import aboutImg1 from "../../assets/New Project (4).svg"
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { ImWhatsapp } from "react-icons/im";
 import { AiOutlineMail } from "react-icons/ai";
 
 export const AboutUs = ({ theme }) => {
-  const [showMore, setShowMore] = useState(false);
-
-  const toggleShowMore = () => {
-    setShowMore(!showMore);
-  };
   const whatsappNumber = "9500813803";
   const emailAddress = "marinamachivayam2003@gmail.com";
 
@@ -34,7 +30,7 @@ export const AboutUs = ({ theme }) => {
         <div className="row">
           <div className="col-xl-4 col-lg-4 col-md-4 col-12">
             <div className="aboutImage">
-              <img src={aboutImg} alt="" className=" aboutIcons img-fluid" />
+              <img src={theme === 'light'?aboutImg1:aboutImg} alt="" className=" aboutIcons img-fluid" />
             </div>
           </div>
           <div className="col-xl-8 col-lg-8 col-md-8 col-12">
@@ -48,7 +44,6 @@ export const AboutUs = ({ theme }) => {
                 Technologies and spearheading the creation of a green cover
                 enhancement web app at Forge Innovation & Ventures.
               </p>
-              {showMore && (
                 <>
                   <p>
                     I am known for my collaborative mindset and dedication to
@@ -71,11 +66,7 @@ export const AboutUs = ({ theme }) => {
                     at Forge Innovation & Ventures.
                   </p>
                 </>
-              )}
             </div>
-            <button className="seeMoreBtn" onClick={toggleShowMore}>
-              {showMore ? "See Less" : "See More"}
-            </button>
           </div>
         </div>
       </div>

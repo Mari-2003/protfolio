@@ -13,12 +13,12 @@ const Home = () => {
   return (
     <div className={`themeColor ${theme === 'light' ? 'lightMode' : ''} ${theme}`}>
       <Example theme={theme} setTheme={setTheme} /> 
-      <Banner theme={theme} setTheme={setTheme} />
-      <AboutUs theme={theme} setTheme={setTheme} />
-      <Projects theme={theme} setTheme={setTheme} />
-      <Experience theme={theme} setTheme={setTheme} />
-      <Contact theme={theme} setTheme={setTheme} />
-      <Footer theme={theme} setTheme={setTheme} />
+      <Banner theme={theme}  />
+      <AboutUs theme={theme} />
+      <Projects theme={theme}  />
+      <Experience theme={theme}  />
+      <Contact theme={theme} />
+      <Footer theme={theme} />
     </div>
   );
 };

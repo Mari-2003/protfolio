@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './Contact.css';
-import contactImage from "../../assets/contactImage.jpg"
+import contactImage from "../../assets/New Project.svg";
+import contactImage1 from "../../assets/New Project (3) (1).svg";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-export const Contact = ({theme}) => {
+export const Contact = ({ theme }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -51,69 +52,86 @@ export const Contact = ({theme}) => {
           <h1>GET IN TOUCH</h1>
         </div>
         <div>
-        <form onSubmit={handleSubmit}>
-            <div className='row'>
-              <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
-                <div className='contactPage'>
-                <div>
-                  <h3>THAT'S ALL ABOUT </h3>
-                  <h3>CONTACT ME..</h3>
-                  <img src={contactImage} alt="" className=' contactImageIcons img-fluid'/>
-                </div>
-                <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
-                <div>
-                  <div>
-                  <input
-                    type='text'
-                    name='name'
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    placeholder='Your name'
-                    required
-                  />
-                  <input
-                    type='email'
-                    name='email'
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    placeholder='Your email'
-                    required
-                  />
+          <form onSubmit={handleSubmit}>
+            <div >
+              <div className='contactPage'>
+                <div className='row'>
+                  <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
+                    <img
+                      src={theme === 'light' ? contactImage1 : contactImage}
+                      alt=""
+                      className='contactImageIcons img-fluid'
+                    />
                   </div>
+                
+                  <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
+                    <div className='rightSide'>
+                    <div className='text'>
+                      <input
+                        type='text'
+                        name='name'
+                        value={formData.name}
+                        onChange={handleInputChange}
+                        placeholder='Your name'
+                        required
+                      />
+                      <input
+                      className='ml-40'
+                        type='email'
+                        name='email'
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        placeholder='Your email'
+                        required
+                      />
+                    </div>
+                    <div className='inputStyle'>
+
+                    <input
+                      type='text'
+                      className='w-full'
+
+                      name='subject'
+                      value={formData.subject}
+                      onChange={handleInputChange}
+                      placeholder='Your Subject'
+                      required
+                    />
+
+                    <textarea
+                    className='textArea'
+                      type='textarea'
+                      rows={4}
+                      name='message'
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      placeholder='Your Message'
+                      required
+                    />
+                    <div>
+                   
+                    </div>
                  
-                  <input
-                    type='text'
-                    name='subject'
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    placeholder='Your Subject'
-                    required
-                  />
-                  <input
-                    type='text'
-                    name='message'
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    placeholder='Your Message'
-                    required
-                  />
-                  <button className='contactButton' type='submit'>Send</button>
-                </div>
-              </div>
+                    </div>
+                    <button className='contactButton' type='submit'>Send</button>
+
+                    </div>
+                    
+                  </div>
                 </div>
               </div>
             </div>
-            </form>
+          </form>
         </div>
         <div className='contactSocialIcons'>
-        <div className='contactAbout'>
-      <FaLinkedin className='contactAboutIcons' />
-        <span>Mariappan.N</span>
-        </div>
-        <div className='contactAbout'>
-        <FaGithub className='contactAboutIcons' />
-        <span>Mari-2003</span>
-        </div>
+          <div className='contactAbout'>
+            <FaLinkedin className='contactAboutIcons' />
+            <span>Mariappan.N</span>
+          </div>
+          <div className='contactAbout'>
+            <FaGithub className='contactAboutIcons' />
+            <span>Mariappan.N</span>
+          </div>
         </div>
       </div>
     </div>
