@@ -14,18 +14,130 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+   
+    
 }
 
-
+.projectImage1{
+    height: 285px !important;
+        border-radius: 6%;
+        box-shadow: 0px 1px 60px -3px rgb(0 0 0 / 40%);
+}
 .projectContent p {
     margin-top: 20px;
     text-align: justify;
   }
 .projectContent h4 {
+    color: #088cff !important;
+}
+
+.light .projectContent h4 {
     color: #088cff;
 }
 
 .projectText{
     padding: 0px 2pc;
 }
+
+.arrowPostion{
+    text-align: end;
+}
+
+.projectArrow{
+    width:20%;
+    font-size:30px;
+    transition: color 0s;
+}
+
+.projectArrow:hover{
+    color: #ffff;
+}
+
+.light .projectArrow:hover{
+    color: #088cff;
+}
+
+@media screen and (max-width: 950px) {
+ .projectText h4{
+    font-size: 18px;
+ }
+ .projectImage1{
+    height: 350px !important;
+ }
+ .projectText p{
+    line-height: 27px !important;
+ }
+}
+
+
+@media screen and (max-width: 768px){
+    .projects {
+      margin-top: 50px;
+    }
+    .projectText h4 {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .projectContent p {
+        margin-top: 10px;
+        line-height: 22px !important;
+    }
+    .projectImage1 {
+        margin-top: 15px;
+    }
+   }
+   
+   @media screen and (max-width: 600px){
+    .projectText{
+      padding: 0px !important;
+      margin-top: 30px;
+    }
+    .projectText h4{
+      font-size: 15px;
+    }
+    .projectContent p {
+        line-height: 30px !important;
+    }
+   }
+
+   @media screen and (max-width: 540px) {
+    .projects {
+        margin-top: 40px;
+      }
+    .projectContent p {
+        font-size: 14px !important;
+        line-height: 30px !important;
+    }
+
+   }
+
+   @media screen and (max-width: 425px){
+    .projectImage1 {
+        height: 225px !important;
+        margin-top: 0px;
+    }
+    .projectContent p {
+        line-height: 22px !important;
+    }
+ 
+  }
+  
+  @media screen and (max-width: 393px){
+    .projectImage1 {
+        height: 190px !important;
+    }
+    .projectContent p {
+        line-height: 19px !important;
+    }
+  
+  }
+  
+  @media screen and (max-width: 375px) {
+    
+  }
+  
+  @media screen and (max-width: 360px) {
+   
+  }
+  
+   

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { ContactMobile } from './ContactMobile'; 
 import './Contact.css';
 import contactImage from "../../assets/New Project.svg";
-import contactImage1 from "../../assets/New Project (3) (1).svg";
+import contactImage1 from "../../assets/New Project (5).svg";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
@@ -46,7 +47,8 @@ export const Contact = ({ theme }) => {
   };
 
   return (
-    <div className='container-fluid'>
+    <div id='contact' className='container-fluid'>
+      <div className='desktop-contact'>
       <div className='contact'>
         <div className='heading'>
           <h1>GET IN TOUCH</h1>
@@ -68,6 +70,7 @@ export const Contact = ({ theme }) => {
                     <div className='rightSide'>
                     <div className='text'>
                       <input
+                      className='w50'
                         type='text'
                         name='name'
                         value={formData.name}
@@ -76,7 +79,7 @@ export const Contact = ({ theme }) => {
                         required
                       />
                       <input
-                      className='ml-40'
+                      className='ml-40 w50'
                         type='email'
                         name='email'
                         value={formData.email}
@@ -90,7 +93,6 @@ export const Contact = ({ theme }) => {
                     <input
                       type='text'
                       className='w-full'
-
                       name='subject'
                       value={formData.subject}
                       onChange={handleInputChange}
@@ -101,7 +103,6 @@ export const Contact = ({ theme }) => {
                     <textarea
                     className='textArea'
                       type='textarea'
-                      rows={4}
                       name='message'
                       value={formData.message}
                       onChange={handleInputChange}
@@ -133,6 +134,11 @@ export const Contact = ({ theme }) => {
             <span>Mariappan.N</span>
           </div>
         </div>
+      </div>
+      </div>
+    
+      <div className='mobileContact'>
+      <ContactMobile />
       </div>
     </div>
   );

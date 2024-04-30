@@ -52,7 +52,7 @@
     margin: 30px 0;
   }
   
-  .text input,
+.text input,
   .inputStyle input,
   .inputStyle textarea {
     background: #636465;
@@ -75,9 +75,141 @@
   .rightSide {
     padding: 0px 2pc;
   }
-  
+  .w50 {
+    width: 50% !important;
+  }
  .light .text input,
- .inputStyle input,
- .inputStyle textarea{
+ .light .inputStyle input,
+ .light .inputStyle textarea{
     background: white;
  }
+
+ .mobileContact{
+  display: none;
+ }
+
+ @media screen and (max-width: 950px) {
+
+.inputStyle .textArea{
+  height: 150px !important;
+}
+.contactSocialIcons {
+  margin-top: 20px;
+}
+
+ }
+
+ @media screen and (max-width: 768px){
+  .contact {
+    margin-top: 50px;
+  }
+  .bannerleft h1 {
+    font-size: 36px;
+}
+.bannerleft h4 {
+  font-size: 20px;
+}
+.contentImage {
+  margin-bottom: 180px;
+}
+.bannerleft button {
+  padding: 1pc 2pc;
+}
+.bannerFooter .bannerIcons {
+  font-size: 25px;
+  margin-right: 5px;
+}
+.bannerFooter {
+  padding: 0.5pc 2pc;
+}
+
+
+ }
+ 
+ @media screen and (max-width: 600px) {
+  .desktop-contact{
+    display: none;
+  }
+ .mobileContact{
+  display: block;
+ } 
+ .text input, .inputStyle input, .inputStyle textarea {
+    height: 35px;
+    padding: 0px 1px;
+ } 
+ .w-full{
+  margin: 17px 0px;
+ }
+ .contactImageleft {
+  margin-right: 35px;
+  margin-bottom: 63px;
+}
+.contactButton {
+  margin-top: 5px;
+  padding: 1pc 2pc;
+}
+.contactAbout {
+  padding: 0.3pc 0pc;
+}
+ }
+
+ @media screen and (max-width: 540px) {
+  .contact {
+    margin-top: 40px;
+  }
+  
+  .text input, .inputStyle input, .inputStyle textarea {
+    height: 30px;
+    padding: 0px 2px;
+}
+.inputStyle .textArea {
+  height: 121px !important;
+}
+  
+ }
+
+ 
+@media screen and (max-width: 425px){
+
+  .ml-40 {
+    margin-left: 9px !important;
+  }
+  .inputStyle .textArea {
+    height: 80px !important;
+}
+.text input, .inputStyle input, .inputStyle textarea {
+  border-radius: 7px;
+}
+.contactButton {
+  padding: 10px 15px;
+}
+.contactAboutIcons {
+  font-size: 25px;
+  margin-right: 4px;
+}
+.text input::placeholder{
+  font-size: 12px; 
+  color: #999; 
+}
+.inputStyle input::placeholder,
+.inputStyle textarea::placeholder {
+  font-size: 14px; 
+  color: #999; 
+}
+}
+
+@media screen and (max-width: 393px){
+  .contactAbout {
+    padding: 5px 5px;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+  
+}
+
+@media screen and (max-width: 360px) {
+ 
+}
+ 

@@ -38,3 +38,39 @@
 .line2{
     right:0;
 }
+
+@media screen and (max-width: 768px) {
+    .footerImg span {
+        width: 44%;
+    } 
+}
+@media screen and (max-width: 600px){
+    .footerImg span {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .footerImg span {
+        width: 39%;
+    }
+
+}
+
+@media screen and (max-width: 393px){
+
+    .footerImg span {
+        width: 39%;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .footerImg span {
+        width: 38%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+   
+}

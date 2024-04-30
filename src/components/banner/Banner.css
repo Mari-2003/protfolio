@@ -4,7 +4,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 1pc 3.5pc;
-    margin-top: 100px;
+    margin-top: 12pc;
 }
 
   
@@ -21,10 +21,10 @@
   }
 
   .contentImage{
-    width: 60%;
-    height: 60%;
+    width: 80%;
     display: block;
     margin: auto;
+    margin-top: 11pc;
   }
 
   .bannerleft h4 {
@@ -33,11 +33,12 @@
   }
 
 .bannerleft h1{
-  font-size: 60px;
+  font-size: 64px;
   color: #088cff;
   font-weight:700;
 }
 .bannerleft p{
+  padding-right: 25px;
   margin-top: 30px;
   font-weight: 400;
 }
@@ -95,5 +96,179 @@
   background-color:white !important;
 
 }
+.mobileBanner {
+  display: none;
+}
 
 
+@media screen and (max-width: 1050px) {
+ .bannerleft h1{
+  font-size: 50px;
+ }
+ .contentImage{
+  margin-bottom: 200px;
+ }
+ .mobileBanner {
+  display: none;
+}
+
+  
+}
+
+@media screen and (max-width: 950px) {
+  .bannerleft h1{
+   font-size: 45px;
+  }
+  .bannerleft button{
+    padding: 2pc 3pc;
+  }
+  .contentImage{
+    margin-bottom: 100px;
+   }
+   .mobileBanner {
+    display: none;
+  }
+   
+ }
+
+ @media screen and (max-width: 768px){
+  .banner {
+    margin-top: 50px;
+  }
+  .mobileBanner {
+    display: none;
+  }
+
+ }
+
+@media screen and (max-width: 602px) {
+  .desktop-banner {
+    display: none; 
+  }
+  .desktop-banner .bannerFooter{
+    display: none;
+  }
+  .mobileBanner {
+    display: block;
+  }
+  .contentImage{
+    margin-bottom: 0px !important;
+   }
+   .bannerleft h1{
+    font-size: 44px !important;
+   }
+   .mobileBanner .banner{
+    margin-left: 20px;
+   }
+
+   .mobileBanner .banner .bannerleft p{
+    display: none;
+   }
+
+   .bannerFooter {
+    display: flow;
+    padding: 1pc 1pc !important;
+}
+.contactAboutBanner {
+  display: contents;
+}
+.contactAboutBanner span  {
+  margin-right: 35px;
+}
+.contactSocialBanner{
+  text-align: start;
+}
+}
+
+@media screen and (max-width: 540px) {
+  .banner {
+    margin-top: 40px;
+  }
+  .contactAboutBanner span {
+    margin-right: 17px;
+}
+.aboutText p {
+  line-height: 25px !important;
+  letter-spacing: 1px;
+}
+.aboutSocialIcons {
+  width: 70%;
+  margin-top: 0px;
+}
+.heading h1 {
+  font-size: 52px !important;
+}
+  
+}
+
+
+@media screen and (max-width: 425px){
+  .bannerleft h1{
+    font-size: 34px !important;
+   }
+   .bannerleft button {
+    padding: 10px 30px;
+}
+.contactAboutBanner span {
+  margin-right: 3px;
+}
+.bannerFooter {
+  padding: 10px 10px !important;
+}
+.bannerFooter .bannerIcons {
+  font-size: 21px;
+  margin-right: 4px;
+}
+.heading h1 {
+  font-size: 36px !important;
+}
+.navbar-toggler{
+  border: none !important;
+}
+}
+
+@media screen and (max-width: 414px){
+  .contactAboutBanner span {
+    margin-right: 1px;
+    font-size: 13px;
+  }
+  .heading h1 {
+    font-size: 32px !important;
+  }
+
+}
+
+
+@media screen and (max-width: 393px){
+  .bannerleft h1{
+    font-size: 30px !important;
+   }
+   .bannerleft button {
+    padding: 13px 20px;
+}
+.bannerFooter .bannerIcons {
+  font-size: 18px !important;
+  margin-right: 3px !important;
+}
+.bannerFooter span{
+  margin-right: 3px;
+}
+}
+
+@media screen and (max-width: 390px) {
+
+  .bannerleft button {
+    padding: 10px 19px !important;
+}
+.bannerleft h1{
+  font-size: 28px !important;
+ }
+}
+
+@media screen and (max-width: 375px) {
+  
+}
+
+@media screen and (max-width: 360px) {
+ 
+}

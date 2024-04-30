@@ -1,5 +1,4 @@
 import React from 'react';
-import { MobileBanner } from './MobileBanner';
 import './Banner.css';
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
@@ -7,7 +6,7 @@ import { FiMail } from "react-icons/fi";
 import bannerImg from '../../assets/bannerImg.jpg';
 import MariappanResume from '../../assets/MariappanResume.pdf';
 
-export const Banner = ({ theme }) => {
+export const MobileBanner  = ({ theme }) => {
 
   const handleHireMe = () => {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -27,11 +26,14 @@ export const Banner = ({ theme }) => {
 
 
   return (
-    <div id='home'>
-       <div className='desktop-banner'>
+    <div>
       <div className='container-fluid'>
-     
         <div className='row align-items-center'>
+          <div className='col-xl-5 col-lg-5 col-md-5 col-12'>
+            <div className='contentImage'>
+              <img src={bannerImg} alt='' className='profileIcon img-fluid' />
+            </div>
+          </div>
           <div className='col-xl-7 col-lg-7 col-md-7 col-12'>
             <div className='banner'>
               <div className='bannerleft'>
@@ -47,31 +49,26 @@ export const Banner = ({ theme }) => {
               </div>
             </div>
           </div>
-          <div className='col-xl-5 col-lg-5 col-md-5 col-12'>
-            <div className='contentImage'>
-              <img src={bannerImg} alt='' className='profileIcon img-fluid' />
-            </div>
-          </div>
         </div>
-  
       </div>
       <div className='bannerFooter'>
-        <div className='row'>
-          <div className='col-xl-4 col-lg-4 col-md-4 col-12'>
-              <FaLinkedin className='bannerIcons' /><span>Mariappan.N</span>
-          </div>
-          <div className='col-xl-4 col-lg-4 col-md-4 col-12'>
-              <AiFillGithub className='bannerIcons' /><span>Mari-2003</span>
-          </div>
-          <div className='col-xl-4 col-lg-4 col-md-4 col-12'>
-              <FiMail className='bannerIcons' /><span>maribca408@gmail.com</span>
-          </div>
-        </div>
-        </div>
-        </div>
-      <div className='mobileBanner'>
-      <MobileBanner  />
-      </div>
+     <div className='contactSocialBanner'>
+       <div className='contactAboutBanner'>
+           <FaLinkedin className='bannerIcons' />
+           <span>Mariappan.N</span>
+       </div>
+       <div className='contactAboutBanner'>
+           <AiFillGithub className='bannerIcons' />
+           <span>Mari-2003</span>
+       </div>
+       <div className='contactAboutBanner'>
+           <FiMail className='bannerIcons' />
+           <span>maribca408@gmail.com</span>
+       </div>
+     </div>
+   </div>
+
     </div>
+     
   );
 };

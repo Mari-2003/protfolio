@@ -20,7 +20,7 @@ export const AboutUs = ({ theme }) => {
     }
 
   return (
-    <div className="container-fluid">
+    <div id="aboutme" className="container-fluid">
       <div className="about">
         <div className="heading">
           <h1>

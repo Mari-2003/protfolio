@@ -1,3 +1,20 @@
+@font-face {
+    font-family: SFPRO_BOLD;
+    src: url('./assets/font/sf-pro-display-cufonfonts/SFPRODISPLAYBOLD.OTF')
+}
+@font-face {
+    font-family: SFPRO_SEMIBOLD;
+    src: url('./assets/font/sf-pro-display-cufonfonts/SFPRODISPLAYSEMIBOLDITALIC.OTF') 
+}
+@font-face {
+    font-family: SFPRO_MEDIUM;
+    src: url('./assets/font/sf-pro-display-cufonfonts/SFPRODISPLAYMEDIUM.OTF') 
+}
+@font-face {
+    font-family: SFPRO_REGULAR;
+    src: url('./assets/font/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF') 
+}
+
 .themeColor.light {
     width: 100%;
     background-color: #f1f1f1;
@@ -16,6 +33,11 @@ body {
 
 .lightMode h1,.lightMode h2,.lightMode p,.lightMode span,.lightMode h3,.lightMode h4 ,.lightMode a {
    color: #080C0F  !important;
+}
+p{
+    font-size: 18px !important;
+    line-height: 30px !important;
+    font-family: SFPRO_MEDIUM !important;
 }
 
 

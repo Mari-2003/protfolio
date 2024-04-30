@@ -4,7 +4,27 @@
     justify-content: space-between;
     width: 100%;
     padding: 1pc 3.5pc;
+
 }
+.navbarAlignment{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    }
+    .nav-link.active{
+    color:#088cff !important;
+}   
+.scrolling-navbar{
+    background-color: #080C0F;
+    box-shadow: -1px 2px 17px -1px rgb(0 0 0 / 80%);
+}
+
+.light .scrolling-navbar{
+background-color: white;
+ box-shadow: -1px 2px 17px -1px rgb(92 92 92 / 37%);
+}
+
 .nav-item a {
     margin: 0 40px;
     color: #636465;
@@ -23,16 +43,16 @@
     color: #080C0F;
 }
 
-.parentContainer .contactButton {
+.parentContainer .contactNavbarButton {
     margin-right: calc(2.5pc + (5 - 2.5) * ((100vw - 300px) / (1600 - 300)));
     background-color: #088cffab;
     border-radius: 20px;
     padding: 0.7pc 1.5pc;
     color: #f1f1f1cc;
-    transition: color 0.3s;
+    transition: color 0.3s all ;
     border: none;
 }
-.parentContainer .contactButton:hover {
+.parentContainer .contactNavbarButton:hover {
     background-color:#088cff;
     color:#f1f1f1;
 
@@ -58,3 +78,78 @@
   }
 
 
+@media screen and (max-width: 1050px) {
+    .nav-item a{
+        font-size: 15px;
+        margin: 0px 25px;
+    }
+    
+}
+
+@media screen and (max-width: 950px) {
+    .nav-item a{
+        margin: 0px 18px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .ms-3 {
+        margin-left: 0 !important; 
+    }
+    .nav-item a {
+        margin: 0px 4px !important;
+    }
+    .parentContainer .contactNavbarButton {
+        margin-right: 15px;
+        padding: 0.7pc 0.5pc;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .contactNavbarButton {
+        display: none !important;
+      }
+
+      .navbar-toggler-icon{
+        margin-left: 330px;
+    }
+    
+}
+
+@media screen and (max-width: 425px){
+
+    .navbar-toggler-icon{
+        margin-left: 230px;
+    }
+    .flexCEnter {
+        padding: 1pc 2pc;
+    }
+}
+
+@media screen and (max-width: 393px){
+    .navbar-toggler-icon{
+        margin-left: 220px;
+    }
+    .flexCEnter {
+        padding: 1pc 1.5pc;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .navbar-toggler-icon{
+        margin-left: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 360px) {
+    .navbar-toggler-icon{
+        margin-left: 180px;
+    }
+    .navbar-toggler{
+        border: none;
+    }
+}

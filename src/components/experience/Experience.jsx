@@ -2,26 +2,26 @@ import React from "react";
 import "./Experience.css";
 export const Experience = () => {
   return (
-    <div className="container-fluid">
+    <div id="experience" className="container-fluid">
       <div className="experience">
         <div className="heading">
-          <h1>EXPERIENCE</h1>
+          <h1 >EXP<span className="aboutMeLetter">ERIE</span>NCE</h1>
         </div>
           <div className="experienceContent">
             <div className="company">
               <div className="companyName">
-                <div>
+                <div className="first">
                   <h3>Icanio Technologies</h3>
                 </div>
-                <div>
+                <div className="second">
                   <h3>(09/2023 - 03/2024)</h3>
                 </div>
               </div>
               <div className="companyTitle">
-                <div>
+                <div className="first">
                   <h3>Software Development Intern</h3>
                 </div>
-                <div>
+                <div className="second">
                   <h3>Tirunelveli</h3>
                 </div>
               </div>
@@ -45,18 +45,18 @@ export const Experience = () => {
             </div>
             <div className="company">
               <div className="companyName">
-                <div>
+                <div className="first">
                   <h3>That's My child</h3>
                 </div>
-                <div>
+                <div className="second">
                   <h3>(12/2022 - 03/2023)</h3>
                 </div>
               </div>
               <div className="companyTitle">
-                <div>
+                <div className="first">
                   <h3>Graduation Traniee</h3>
                 </div>
-                <div>
+                <div className="second">
                   <h3>Alwarkurichi</h3>
                 </div>
               </div>

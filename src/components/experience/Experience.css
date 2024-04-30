@@ -12,9 +12,20 @@
 
 .company {
   margin-top: 40px;
-  margin-right: 50px;
+  border-radius: 2%;
+  box-shadow: -1px 0px 15px 0px rgb(0 0 0);
+  padding: 2pc 2pc;
+   
 }
 
+
+.light .company {
+  box-shadow: 0px 1px 60px -3px rgb(0 0 0 / 40%);;
+}
+.companyName h3{
+  color: #088cff !important;
+  font-weight: 600 !important;
+}
 .companyName,
 .companyTitle {
   display: flex;
@@ -24,13 +35,97 @@
 
 
 
-.companyName h3,
 .companyTitle h3 {
   margin: 0;
   margin-top: 20px;
+  color:#636465;
+  
 }
 
 .company p {
   margin-top: 20px;
-  text-align:justify ;
+  text-align:justify;
+  color:#faebd7ab;
+  letter-spacing: 2px;
+}
+
+
+
+@media screen and (max-width: 1050px) {
+  .company p{
+    letter-spacing: 0.5px;
+  }
+   
+ }
+
+ @media screen and (max-width: 768px){
+  .experience  {
+    margin-top: 50px;
+  }
+ }
+
+
+ @media screen and (max-width: 600px) {
+    .company h3{
+      font-size: 18px;
+    }
+
+    .company p {
+      letter-spacing: 0.3px;
+      line-height: 25px !important;
+      font-size: 15px !important;
+    }
+    
+ }
+
+
+ @media screen and (max-width: 540px) {
+  .experience  {
+    margin-top: 40px;
+  }
+  .company h3 {
+    font-size: 16px;
+}
+.company p{
+  font-size: 14px !important;
+  line-height: 25px !important;
+}
+ }
+
+ @media screen and (max-width: 425px){
+  .company p {
+    letter-spacing: 0px;
+    line-height: 20px !important;
+  }
+  .company {
+    padding: 1pc 10px;
+  }
+  .company h3 {
+    font-size: 15px;
+}
+.second h3{
+  font-size: 11px;
+}
+   
+}
+
+@media screen and (max-width: 393px){
+  .second h3 {
+    font-size: 9px;
+}
+.company p {
+  line-height: 18px !important;
+}
+.company .first h3 {
+  font-size: 14px;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+  
+}
+
+@media screen and (max-width: 360px) {
+ 
 }
