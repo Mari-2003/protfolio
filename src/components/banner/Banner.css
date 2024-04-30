@@ -102,11 +102,12 @@
 
 
 @media screen and (max-width: 1050px) {
+
  .bannerleft h1{
   font-size: 50px;
  }
  .contentImage{
-  margin-bottom: 200px;
+  margin-bottom: 180px;
  }
  .mobileBanner {
   display: none;
@@ -116,6 +117,7 @@
 }
 
 @media screen and (max-width: 950px) {
+
   .bannerleft h1{
    font-size: 45px;
   }
@@ -123,7 +125,7 @@
     padding: 2pc 3pc;
   }
   .contentImage{
-    margin-bottom: 100px;
+    margin-bottom: 180px;
    }
    .mobileBanner {
     display: none;
@@ -133,15 +135,21 @@
 
  @media screen and (max-width: 768px){
   .banner {
-    margin-top: 50px;
+    margin-top: 100px;
   }
   .mobileBanner {
     display: none;
+  }
+  .contentImage {
+    margin-top: 41px;
   }
 
  }
 
 @media screen and (max-width: 602px) {
+  .contentImage{
+    margin-top: 100px;
+  }
   .desktop-banner {
     display: none; 
   }
@@ -207,16 +215,17 @@
     font-size: 34px !important;
    }
    .bannerleft button {
-    padding: 10px 30px;
+    padding: 10px 30px !important;
 }
 .contactAboutBanner span {
+  font-size: 14px;
   margin-right: 3px;
 }
 .bannerFooter {
   padding: 10px 10px !important;
 }
 .bannerFooter .bannerIcons {
-  font-size: 21px;
+  font-size: 20px;
   margin-right: 4px;
 }
 .heading h1 {
@@ -228,6 +237,9 @@
 }
 
 @media screen and (max-width: 414px){
+  .bannerleft h1 {
+    font-size: 32px !important;
+}
   .contactAboutBanner span {
     margin-right: 1px;
     font-size: 13px;
@@ -235,6 +247,9 @@
   .heading h1 {
     font-size: 32px !important;
   }
+  .bannerleft button {
+    padding: 12px 27px !important;
+}
 
 }
 

@@ -58,6 +58,13 @@
    
  }
 
+ @media screen and (max-width: 950px) {
+  .experience {
+    margin-top: 90px;
+  }
+  
+ }
+
  @media screen and (max-width: 768px){
   .experience  {
     margin-top: 50px;

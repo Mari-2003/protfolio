@@ -54,55 +54,51 @@ export const ContactMobile = ({ theme }) => {
         <div>
           <form onSubmit={handleSubmit}>
             <div className='contactPage'>
-              <div className='contactImageleft'>
+              <div className='inputStyle'>
+                <input
+                  className='firstfield'
+                  type='text'
+                  name='name'
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  placeholder='Your name'
+                  required
+                />
+                <input
+                  className='ml-40'
+                  type='email'
+                  name='email'
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder='Your email'
+                  required
+                />
+                <input
+                  type='text'
+                  className='w-full'
+                  name='subject'
+                  value={formData.subject}
+                  onChange={handleInputChange}
+                  placeholder='Your Subject'
+                  required
+                />
+                <textarea
+                  className='textArea w-full'
+                  type='textarea'
+                  name='message'
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  placeholder='Your Message'
+                  required
+                />
+                <button className='contactButton w-full' type='submit'>Send</button>
+              </div>
+              <div className='contactImageContainer'>
                 <img
                   src={theme === 'light' ? contactImage1 : contactImage}
                   alt=""
-                  className='contactImageIcons img-fluid'
+                  className='contactImage img-fluid'
                 />
-              </div>
-              <div>
-                <div className='text'>
-                  <input
-                    className='w50'
-                    type='text'
-                    name='name'
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    placeholder='Your name'
-                    required
-                  />
-                  <input
-                    className='ml-40 w50'
-                    type='email'
-                    name='email'
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    placeholder='Your email'
-                    required
-                  />
-                </div>
-                <div className='inputStyle'>
-                  <input
-                    type='text'
-                    className='w-full'
-                    name='subject'
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    placeholder='Your Subject'
-                    required
-                  />
-                  <textarea
-                    className='textArea'
-                    type='textarea'
-                    name='message'
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    placeholder='Your Message'
-                    required
-                  />
-                </div>
-                <button className='contactButton' type='submit'>Send</button>
               </div>
             </div>
           </form>

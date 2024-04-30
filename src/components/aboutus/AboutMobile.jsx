@@ -1,5 +1,4 @@
-import React from "react";
-import { AboutMobile } from "./AboutMobile";
+import React, { useState } from "react";
 import "./AboutUs.css";
 import aboutImg from "../../assets/New Project (2).svg";
 import aboutImg1 from "../../assets/New Project (4).svg"
@@ -7,23 +6,23 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { ImWhatsapp } from "react-icons/im";
 import { AiOutlineMail } from "react-icons/ai";
 
-export const AboutUs = ({ theme }) => {
+export const AboutMobile = ({ theme }) => {
+  const [showMore, setShowMore] = useState(false);
+
   const whatsappNumber = "9500813803";
   const emailAddress = "marinamachivayam2003@gmail.com";
 
-    const handleWhatsappClick = () => {
-      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-      if (isMobile) {
-        window.open(`https://wa.me/${whatsappNumber}`, "_blank"); // Opens WhatsApp with your number
-      } else {
-        window.open(`https://web.whatsapp.com/send?phone=${whatsappNumber}`, "_blank"); // Opens WhatsApp Web with your number
-      }
+  const handleWhatsappClick = () => {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      window.open(`https://wa.me/${whatsappNumber}`, "_blank"); // Opens WhatsApp with your number
+    } else {
+      window.open(`https://web.whatsapp.com/send?phone=${whatsappNumber}`, "_blank"); // Opens WhatsApp Web with your number
     }
+  }
 
   return (
-    <div>
-      <div className="desktop-About">
-      <div id="aboutme" className="container-fluid">
+    <div id="aboutme" className="container-fluid">
       <div className="about">
         <div className="heading">
           <h1>
@@ -47,6 +46,7 @@ export const AboutUs = ({ theme }) => {
                 Technologies and spearheading the creation of a green cover
                 enhancement web app at Forge Innovation & Ventures.
               </p>
+              {showMore && (
                 <>
                   <p>
                     I am known for my collaborative mindset and dedication to
@@ -69,60 +69,61 @@ export const AboutUs = ({ theme }) => {
                     at Forge Innovation & Ventures.
                   </p>
                 </>
+              )}
+              <div className="aboutSeeButton">
+                {showMore ? (
+                  <button className="seeLessBtn" onClick={() => setShowMore(false)}>See Less</button>
+                ) : (
+                  <button className="seeMoreBtn" onClick={() => setShowMore(true)}>See More</button>
+                )}
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="aboutSocialIcons">
         <div className="aboutLink">
-        <FaLinkedin className="aboutLinkIcons"/>
-        <a
-          href="https://www.linkedin.com/in/mariappan-n-5a8657261/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span>Mariappan.N</span>
-        </a>
+          <FaLinkedin className="aboutLinkIcons"/>
+          <a
+            href="https://www.linkedin.com/in/mariappan-n-5a8657261/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Mariappan.N</span>
+          </a>
         </div>
         <div className="aboutLink">
-        <FaGithub className="aboutLinkIcons" />  
-        <a
-          href="https://github.com/Mari-2003"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-          <span>Mari-2003</span>
-        </a>
+          <FaGithub className="aboutLinkIcons" />  
+          <a
+            href="https://github.com/Mari-2003"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Mari-2003</span>
+          </a>
         </div>
         <div className="aboutLink">
-      <ImWhatsapp className="aboutLinkIcons" onClick={handleWhatsappClick} />
-      <a
-        href={`https://wa.me/${whatsappNumber}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={handleWhatsappClick}
-      >
-        <span>whatsapp</span>
-      </a>
-    </div>
-    <div className="aboutLink">
-    <AiOutlineMail className="aboutLinkIcons"/>
-      <a
-        href={`mailto:${emailAddress}`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span>marinamachivayam</span>
-      </a>
-    </div>
-        
+          <ImWhatsapp className="aboutLinkIcons" onClick={handleWhatsappClick} />
+          <a
+            href={`https://wa.me/${whatsappNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleWhatsappClick}
+          >
+            <span>whatsapp</span>
+          </a>
+        </div>
+        <div className="aboutLink">
+          <AiOutlineMail className="aboutLinkIcons"/>
+          <a
+            href={`mailto:${emailAddress}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>marinamachivayam</span>
+          </a>
+        </div>
       </div>
     </div>
-      </div>
-     
-<AboutMobile className='aboutMobile'/>
-    </div>
-   
   );
 };

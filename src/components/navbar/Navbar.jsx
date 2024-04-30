@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -60,7 +60,7 @@ const location = useLocation()
           <NavbarBrand><FaMediumM className='logo' /></NavbarBrand>
           </div>
    <div>
-   <NavbarToggler onClick={toggle} />
+   <NavbarToggler onClick={toggle}/>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>

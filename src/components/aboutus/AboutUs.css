@@ -70,10 +70,16 @@
   margin-right: 10px;
   font-size: 40px;
 }
+.aboutMobile{
+  display: none;
+}
 
 @media screen and (max-width: 1050px) {
   .aboutSocialIcons {
     width: 40%;
+  }
+  .aboutMobile{
+    display: none;
   }
 
   .aboutLink {
@@ -88,12 +94,21 @@
 
 @media screen and (max-width: 950px) {
  
+.about {
+  margin-top:90px;
+}
+.aboutMobile{
+  display: none;
+}
 }
 
 
 @media screen and (max-width: 768px){
   .about {
     margin-top: 50px;
+  }
+  .aboutMobile{
+    display: none;
   }
  .aboutText p{
   line-height: 25px !important;
@@ -105,6 +120,12 @@
  }
 
  @media screen and (max-width: 602px) {
+  .aboutMobile{
+    display: block;
+  }
+  .desktop-About{
+ display: none;
+  }
   .aboutText p{
     line-height: 27px !important;
    } 
@@ -115,6 +136,30 @@
   font-size: 16px !important;
   line-height: 30px !important;
  } 
+
+ .seeMoreBtn{
+  background: #088cff;
+  border: none;
+  border-radius: 10px;
+  color: #636465;
+  transition: color 0.3s;
+  padding: 15px 21px;
+}
+.seeMoreBtn:hover{
+color: white;
+}
+.seeLessBtn{
+  background: #088cff;
+  border: none;
+  color: #636465;
+  transition: color 0.3s;
+  padding: 15px 21px;
+}
+.seeLessBtn:hover{
+color: white;
+}
+
+
     
  }
 

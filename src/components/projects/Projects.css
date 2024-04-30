@@ -58,6 +58,9 @@
 }
 
 @media screen and (max-width: 950px) {
+    .projects{
+        margin-top: 90px;
+    }
  .projectText h4{
     font-size: 18px;
  }
@@ -97,6 +100,9 @@
     }
     .projectContent p {
         line-height: 30px !important;
+    }
+    .projectImage1 {
+        height: 250px !important;
     }
    }
 
