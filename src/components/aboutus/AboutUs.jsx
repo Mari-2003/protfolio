@@ -19,6 +19,7 @@ export const AboutUs = ({ theme }) => {
     });
   
     sr.reveal('.heading', {origin: 'left'});
+    sr.reveal('.aboutLink', {origin: 'left'})
   }, []);
 
   const whatsappNumber = "9500813803";

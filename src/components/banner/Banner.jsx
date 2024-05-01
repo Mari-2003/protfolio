@@ -19,6 +19,7 @@ export const Banner = ({ theme }) => {
     });
   
     sr.reveal('.bannerleft', {origin: 'top'});
+    sr.reveal('.bannerFooter', {origin: 'bottom'});
   }, []);
 
   const handleHireMe = () => {
