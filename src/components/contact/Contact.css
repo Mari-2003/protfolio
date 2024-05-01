@@ -19,11 +19,14 @@
     background-color: #088cff;
     border-radius: 10px;
     color: #f1f1f1;
-    transition: color 0.3s;
+    transition: all ease color 0.5s;
     font-weight: 500;
   }
   
   .contactButton:hover {
+      transform: translate(3px);
+      border: 2px solid var(--main-color);
+      background-color: #088cff ;
     color: #636465;
   }
   
@@ -245,10 +248,12 @@
 }
 
 @media screen and (max-width: 375px) {
-  
+ 
 }
 
 @media screen and (max-width: 360px) {
- 
+  .contactPage {
+    margin-top: 75px;
+}
 }
  

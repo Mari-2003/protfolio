@@ -94,11 +94,11 @@ export const ContactMobile = ({ theme }) => {
                 <button className='contactButton w-full' type='submit'>Send</button>
               </div>
               <div className='contactImageContainer'>
-                <img
-                  src={theme === 'light' ? contactImage1 : contactImage}
-                  alt=""
-                  className='contactImage img-fluid'
-                />
+              <img
+                      src={theme === 'light' ? contactImage1 : contactImage}
+                      alt=""
+                      className='contactImageIcons img-fluid'
+                    />
               </div>
             </div>
           </form>

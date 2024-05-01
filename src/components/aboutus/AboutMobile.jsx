@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import ScrollReveal from 'scrollreveal';
 import "./AboutUs.css";
 import aboutImg from "../../assets/New Project (2).svg";
 import aboutImg1 from "../../assets/New Project (4).svg"
@@ -7,6 +8,18 @@ import { ImWhatsapp } from "react-icons/im";
 import { AiOutlineMail } from "react-icons/ai";
 
 export const AboutMobile = ({ theme }) => {
+
+  useEffect(() => { 
+    const sr = ScrollReveal ({
+      distance: '40px',
+      duration: 2500,
+      delay: 300,
+      reset: true
+    });
+  
+    sr.reveal('.heading', {origin: 'left'});
+  }, []);
+
   const [showMore, setShowMore] = useState(false);
 
   const whatsappNumber = "9500813803";

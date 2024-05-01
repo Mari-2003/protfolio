@@ -70,7 +70,7 @@
   margin-right: 10px;
   font-size: 40px;
 }
-.aboutMobile{
+.mobileAboutPage{
   display: none;
 }
 
@@ -209,7 +209,9 @@ color: white;
  }
  
  @media screen and (max-width: 375px) {
-   
+  .aboutSocialIcons {
+    width: 100%;
+}
  }
  
  @media screen and (max-width: 360px) {

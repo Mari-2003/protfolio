@@ -57,11 +57,13 @@
   background-color: #080c0f;
   border-radius: 10px;
   color:#088cff;
-  transition: color 0.3s;
+  transition: all ease color 0.5s;
   font-weight: 500;
 }
 
 .bannerleft button:hover{
+  transform: translate(5px);
+  border: 2px solid var(--main-color);
   background-color: #088cff ;
   color: #f1f1f1;
  }
@@ -96,9 +98,55 @@
   background-color:white !important;
 
 }
+.bannerleft .banner-heading {
+  position: relative;
+  animation: move-text 0.75s forwards;
+  opacity: 0;
+}
+
+@keyframes move-text {
+  0% {
+      bottom: -0.2em;
+      opacity: 1;
+      color: #088cff;
+  }
+  
+  50% {
+      bottom: 0.2em;
+      color: #088cff;
+  }
+
+  100% {
+      bottom: 0;
+      opacity: 1;
+      color: #088cff;
+  }
+}
+
 .mobileBanner {
   display: none;
 }
+
+@keyframes imgg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-22px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.contentImage .profileIcon {
+  animation: imgg 2s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+
+
+
 
 
 @media screen and (max-width: 1050px) {
@@ -253,13 +301,29 @@
 
 }
 
+@media screen and (max-width: 404px) {
+  .bannerleft h1 {
+    font-size: 31px !important;
+}
+.bannerleft button {
+  padding: 12px 25px !important;
+}
+.bannerFooter .bannerIcons {
+  font-size: 23px;
+}
+.bannerFooter {
+  margin-top: 25px
+}
+  
+}
+
 
 @media screen and (max-width: 393px){
   .bannerleft h1{
     font-size: 30px !important;
    }
    .bannerleft button {
-    padding: 13px 20px;
+    padding: 13px 20px !important;
 }
 .bannerFooter .bannerIcons {
   font-size: 18px !important;
@@ -281,9 +345,27 @@
 }
 
 @media screen and (max-width: 375px) {
-  
+  .heading h1 {
+    font-size: 30px !important;
+}
 }
 
-@media screen and (max-width: 360px) {
- 
+@media screen and (max-width: 361px) {
+  .heading h1 {
+    font-size: 27px !important;
+}
+.bannerleft button {
+  padding: 10px 15px !important;
+}
+.bannerleft h1 {
+  font-size: 26px !important;
+}
+.contactAboutBanner span {
+  margin-right: 2px !important;
+  font-size: 12px;
+}
+.contactAboutBanner span {
+  margin-right: 2px !important;
+  font-size: 11px;
+}
 }

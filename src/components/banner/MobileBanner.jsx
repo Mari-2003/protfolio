@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react'; 
+import ScrollReveal from 'scrollreveal';
 import './Banner.css';
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
@@ -6,7 +7,19 @@ import { FiMail } from "react-icons/fi";
 import bannerImg from '../../assets/bannerImg.jpg';
 import MariappanResume from '../../assets/MariappanResume.pdf';
 
+
 export const MobileBanner  = ({ theme }) => {
+
+  useEffect(() => { 
+    const sr = ScrollReveal ({
+      distance: '40px',
+      duration: 2000,
+      delay: 100,
+      reset: true
+    });
+  
+    sr.reveal('.bannerleft', {origin: 'top'});
+  }, []);
 
   const handleHireMe = () => {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);

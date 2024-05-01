@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ScrollReveal from 'scrollreveal';
 import { AboutMobile } from "./AboutMobile";
 import "./AboutUs.css";
 import aboutImg from "../../assets/New Project (2).svg";
@@ -8,6 +9,18 @@ import { ImWhatsapp } from "react-icons/im";
 import { AiOutlineMail } from "react-icons/ai";
 
 export const AboutUs = ({ theme }) => {
+
+  useEffect(() => { 
+    const sr = ScrollReveal ({
+      distance: '40px',
+      duration: 2500,
+      delay: 300,
+      reset: true
+    });
+  
+    sr.reveal('.heading', {origin: 'left'});
+  }, []);
+
   const whatsappNumber = "9500813803";
   const emailAddress = "marinamachivayam2003@gmail.com";
 
@@ -120,8 +133,11 @@ export const AboutUs = ({ theme }) => {
       </div>
     </div>
       </div>
+      <div className="mobileAboutPage">
+      <AboutMobile />
+      </div>
      
-<AboutMobile className='aboutMobile'/>
+
     </div>
    
   );

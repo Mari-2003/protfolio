@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react'; 
+import ScrollReveal from 'scrollreveal';
 import { MobileBanner } from './MobileBanner';
 import './Banner.css';
 import { FaLinkedin } from "react-icons/fa";
@@ -8,6 +9,17 @@ import bannerImg from '../../assets/bannerImg.jpg';
 import MariappanResume from '../../assets/MariappanResume.pdf';
 
 export const Banner = ({ theme }) => {
+
+  useEffect(() => { 
+    const sr = ScrollReveal ({
+      distance: '60px',
+      duration: 2500,
+      delay: 300,
+      reset: true
+    });
+  
+    sr.reveal('.bannerleft', {origin: 'top'});
+  }, []);
 
   const handleHireMe = () => {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -26,6 +38,7 @@ export const Banner = ({ theme }) => {
   };
 
 
+
   return (
     <div id='home'>
        <div className='desktop-banner'>
@@ -36,8 +49,8 @@ export const Banner = ({ theme }) => {
             <div className='banner'>
               <div className='bannerleft'>
                 <h4>Hi! I am Mariappan</h4>
-                <h1>I AM FULL STACK</h1>
-                <h1>DEVELOPER</h1>
+                <h1 className="banner-heading">I AM FULL STACK</h1>
+    <h1 className="banner-heading">DEVELOPER</h1>
                 <p>Experienced software developer proficient in React and Node.js.
                   Skilled in creating scalable web applications with a focus on high-quality code. Strong in both front-end and back-end development, with a collaborative mindset.</p>
                 <div className='bannerButton'>

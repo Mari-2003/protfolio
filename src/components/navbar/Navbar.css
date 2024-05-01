@@ -76,6 +76,18 @@ background-color: white;
   .lightMode .parentContainer .contactButton:hover {
     color: #080C0F; 
   }
+  @keyframes enterFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .logo {
+    animation: enterFromLeft 2s ease forwards;
+  }
 
 
 @media screen and (max-width: 1050px) {
