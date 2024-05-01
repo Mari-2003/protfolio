@@ -54,9 +54,18 @@
     .footerImg span {
         width: 39%;
     }
+    .footerText {
+        margin-top: 20px;
+    }
 
 }
 
+@media screen and (max-width: 404px) {
+    .footerText {
+        margin-top: 15px;
+    }
+    
+}
 @media screen and (max-width: 393px){
 
     .footerImg span {

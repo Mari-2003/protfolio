@@ -8,18 +8,15 @@ import { ImWhatsapp } from "react-icons/im";
 import { AiOutlineMail } from "react-icons/ai";
 
 export const AboutMobile = ({ theme }) => {
-
   useEffect(() => { 
     const sr = ScrollReveal ({
-      distance: '40px',
+      distance: '60px',
       duration: 2500,
-      delay: 300,
+      delay: 400,
       reset: true
     });
-  
-    sr.reveal('.heading', {origin: 'left'});
+    sr.reveal('.aboutLink', {origin: 'left'})
   }, []);
-
   const [showMore, setShowMore] = useState(false);
 
   const whatsappNumber = "9500813803";

@@ -78,10 +78,7 @@
   .aboutSocialIcons {
     width: 40%;
   }
-  .aboutMobile{
-    display: none;
-  }
-
+ 
   .aboutLink {
     display: flex;
     margin-top: 20px;
@@ -97,9 +94,7 @@
 .about {
   margin-top:90px;
 }
-.aboutMobile{
-  display: none;
-}
+
 }
 
 
@@ -107,8 +102,34 @@
   .about {
     margin-top: 50px;
   }
-  .aboutMobile{
+  .desktop-About{
     display: none;
+  }
+  .mobileAboutPage{
+    display: block;
+  }
+
+  .seeMoreBtn{
+    background: #088cff;
+    border: none;
+    border-radius: 10px;
+    color: #636465;
+    transition: color 0.3s;
+    padding: 15px 21px;
+  }
+  .seeMoreBtn:hover{
+  color: white;
+  }
+  .seeLessBtn{
+    background: #088cff;
+    border: none;
+    border-radius: 10px;
+    color: #636465;
+    transition: color 0.3s;
+    padding: 15px 21px;
+  }
+  .seeLessBtn:hover{
+  color: white;
   }
  .aboutText p{
   line-height: 25px !important;
@@ -120,11 +141,8 @@
  }
 
  @media screen and (max-width: 602px) {
-  .aboutMobile{
-    display: block;
-  }
   .desktop-About{
- display: none;
+    display: none;
   }
   .aboutText p{
     line-height: 27px !important;
@@ -188,6 +206,13 @@ color: white;
   width: 90%;
   margin-top: 0px;
 }
+.aboutLink {
+  /* Remove opacity property */
+  opacity: 1;
+
+  /* Reset transform property */
+  transform: none !important;
+}
 }
 
 @media screen and (max-width: 414px) {
@@ -206,6 +231,13 @@ color: white;
     width: 95%;
   }
 
+ }
+
+ @media screen and (max-width: 390px) {
+  .aboutText p {
+    font-size: 13px !important;
+}
+  
  }
  
  @media screen and (max-width: 375px) {

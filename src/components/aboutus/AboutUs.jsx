@@ -12,9 +12,9 @@ export const AboutUs = ({ theme }) => {
 
   useEffect(() => { 
     const sr = ScrollReveal ({
-      distance: '40px',
+      distance: '60px',
       duration: 2500,
-      delay: 300,
+      delay: 400,
       reset: true
     });
   
@@ -135,7 +135,7 @@ export const AboutUs = ({ theme }) => {
     </div>
       </div>
       <div className="mobileAboutPage">
-      <AboutMobile />
+      <AboutMobile theme={theme}/>
       </div>
      
 
