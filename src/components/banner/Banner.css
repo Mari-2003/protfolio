@@ -337,11 +337,14 @@
 
 
 @media screen and (max-width: 393px){
+  .projectText h4 {
+    font-size: 14px;
+}
   .bannerleft h1{
     font-size: 30px !important;
    }
    .bannerleft button {
-    padding: 13px 20px !important;
+    padding: 14px 18px !important;
 }
 .bannerFooter .bannerIcons {
   font-size: 18px !important;
