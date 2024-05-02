@@ -138,7 +138,7 @@ export const Contact = ({ theme }) => {
       </div>
     
       <div className='mobileContact'>
-      <ContactMobile />
+      <ContactMobile theme={theme} />
       </div>
     </div>
   );

@@ -160,21 +160,25 @@
   border: none;
   border-radius: 10px;
   color: #636465;
-  transition: color 0.3s;
+  transition: all ease color 0.3s;
   padding: 15px 21px;
 }
 .seeMoreBtn:hover{
-color: white;
+    background-color: #080c0f;
+    border: 1px solid #088cff;
+    color: #088cff;
 }
 .seeLessBtn{
   background: #088cff;
   border: none;
   color: #636465;
-  transition: color 0.3s;
+  transition: all ease color 0.3s;
   padding: 15px 21px;
 }
 .seeLessBtn:hover{
-color: white;
+  background-color: #080c0f;
+  border: 1px solid #088cff;
+  color: #088cff;
 }
 
 

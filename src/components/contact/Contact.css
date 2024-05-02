@@ -139,19 +139,22 @@
   .contactPage {
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
   }
   .contactImageContainer {
-    margin-top: 115px;
-    position: absolute;
+    margin-top: -500px;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.3; 
+    opacity: 0.3;
+    z-index: 0;
   }
   
   .contactPage {
-    margin-top: 150px;
+    margin-top: 120px;
   }
   .contactImage {
     width: 100%;
@@ -159,43 +162,74 @@
     object-fit: cover;
   }
   
-  .desktop-contact{
+  .desktop-contact {
     display: none;
   }
- .mobileContact{
-  display: block;
- } 
- .text input, .inputStyle input, .inputStyle textarea {
-  display:flex;
+  .mobileContact {
+    display: block;
+  } 
+  
+  /* Corrected CSS for input fields */
+  .inputStyle input,
+  .inputStyle textarea {
     height: 35px;
- } 
- .w-full{
-  margin: 17px 0px;
- }
- .ml-40{
-  margin-left: 0px !important;
+    width:100%;
+    margin-bottom: 10px;
+    z-index: 2;
+    position: relative;
+    background-color: #636465;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0px 5px;
+  }
+  
+  .w-full {
+    margin: 17px 0px;
+  }
+  .inputStyle{
+    width:50%;
+  }
+  .ml-40 {
+    margin-left: 0px !important;
     margin-top: 15px;
- }
- .contactImageleft {
-  margin-right: 35px;
-  margin-bottom: 63px;
+  }
+  
+  /* Adjusted styling for the button */
+  .contactButton {
+    position: relative;
+    margin-top: 15px;
+    padding: 10px 20px;
+    z-index: 2;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .contactAbout {
+    padding: 10px 0px;
+  }
 }
-.contactButton {
-  margin-top: 5px;
-  padding: 1pc 2pc;
-}
-.contactAbout {
-  padding: 0.3pc 0pc;
-}
- }
+
+
+
 
  @media screen and (max-width: 540px) {
   .contact {
     margin-top: 40px;
   }
   
+  .contactPage {
+    margin-top: 130px;
+  }
   .text input, .inputStyle input, .inputStyle textarea {
-    height: 50px;
+    height: 40px;
     padding: 0px 2px;
 }
 .inputStyle .textArea {
@@ -209,6 +243,19 @@
 
  
 @media screen and (max-width: 425px){
+  .inputStyle {
+    width: 70%;
+}
+  .contactPage{
+    margin-top: 100px;
+  }
+  text input, .inputStyle input, .inputStyle textarea {
+    height: 25px;
+    padding: 0px 10px;
+}
+  .contactImageContainer {
+    margin-top: -365px;
+  }
 
   .ml-40 {
     margin-left: 1px !important;
@@ -217,7 +264,7 @@
     height: 80px !important;
 }
 .text input, .inputStyle input, .inputStyle textarea {
-  border-radius: 7px;
+  border-radius: 5px;
 }
 .contactButton {
   padding: 10px 15px;
@@ -226,8 +273,8 @@
   font-size: 25px;
   margin-right: 4px;
 }
-.contactPage {
-  margin-top: 100px;
+.inputStyle input, .inputStyle textarea {
+  margin-bottom: 5px;
 }
 .text input::placeholder{
   font-size: 12px; 
@@ -243,9 +290,25 @@
 }
 }
 
+@media screen and (max-width: 414px) {
+  .contactSocialIcons {
+    margin-top: 50px;
+}
+  
+}
+@media screen and (max-width: 404px) {
+  .contactSocialIcons {
+    margin-top: 60px;
+}
+  
+}
+
 @media screen and (max-width: 393px){
   .contactAbout {
-    padding: 5px 5px;
+    padding: 5px 0px;
+}
+.contactSocialIcons {
+  margin-top: 80px;
 }
 
 }
