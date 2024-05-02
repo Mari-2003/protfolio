@@ -112,17 +112,17 @@
     padding: 1pc 10px;
   }
   .company h3 {
-    font-size: 14px;
+    font-size: 14px !important;
 }
 .second h3{
-  font-size: 11px;
+  font-size: 11px !important;
 }
    
 }
 
 @media screen and (max-width: 404px) {
   .company h3 {
-    font-size: 12px;
+    font-size: 12px !important;
 }
   .company p {
     font-size: 11px !important;
@@ -132,13 +132,13 @@
 
 @media screen and (max-width: 393px){
   .second h3 {
-    font-size: 9px;
+    font-size: 9px !important;
 }
 .company p {
   line-height: 18px !important;
 }
 .company .first h3 {
-  font-size: 14px;
+  font-size: 13px !important;
 }
 
 }
