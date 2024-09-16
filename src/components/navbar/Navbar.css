@@ -4,27 +4,26 @@
     justify-content: space-between;
     width: 100%;
     padding: 1pc 3.5pc;
-
+    flex-wrap: nowrap;
 }
-.navbarAlignment{
+
+.navbarAlignment {
     width: 100%;
     position: fixed;
     z-index: 999;
     top: 0;
-    }
-    .nav-link.active{
-    color:#088cff !important;
-}   
-.scrolling-navbar{
+}
+.nav-link.active {
+    color: #088cff !important;
+}
+.scrolling-navbar {
     background-color: #080C0F;
     box-shadow: -1px 2px 17px -1px rgb(0 0 0 / 80%);
 }
-
-.light .scrolling-navbar{
-background-color: white;
- box-shadow: -1px 2px 17px -1px rgb(92 92 92 / 37%);
+.light .scrolling-navbar {
+    background-color: white;
+    box-shadow: -1px 2px 17px -1px rgb(92 92 92 / 37%);
 }
-
 .nav-item a {
     margin: 0 40px;
     color: #636465;
@@ -34,85 +33,74 @@ background-color: white;
 .nav-item a:hover {
     color: #f1f1f1;
 }
-.logo{
-    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); 
+.logo {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     color: #088cff;
+    animation: enterFromLeft 2s ease forwards;
 }
-
-.nightIcon{
+.nightIcon {
     color: #080C0F;
 }
-
 .parentContainer .contactNavbarButton {
     margin-right: calc(2.5pc + (5 - 2.5) * ((100vw - 300px) / (1600 - 300)));
     background-color: #088cffab;
     border-radius: 20px;
     padding: 0.7pc 1.5pc;
     color: #f1f1f1cc;
-    transition: color 0.3s all ;
+    transition: color 0.3s all;
     border: none;
 }
 .parentContainer .contactNavbarButton:hover {
-    background-color:#088cff;
-    color:#f1f1f1;
-
+    background-color: #088cff;
+    color: #f1f1f1;
 }
-.modeIcon{
-    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); 
+.modeIcon {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
-
 .lightMode .nav-item a {
     color: #636465 !important;
     transition: color 0.3s !important;
-  }
-  .lightMode .nav-item a:hover {
-    color: #080C0F !important; 
-  }
- 
-  .lightMode .parentContainer .contactButton {
+}
+.lightMode .nav-item a:hover {
+    color: #080C0F !important;
+}
+.lightMode .parentContainer .contactButton {
     background-color: #088cffab;
-    transition: color 0.3s; 
-  }
-  .lightMode .parentContainer .contactButton:hover {
-    color: #080C0F; 
-  }
-  @keyframes enterFromLeft {
+    transition: color 0.3s;
+}
+.lightMode .parentContainer .contactButton:hover {
+    color: #080C0F;
+}
+
+/* Animation for logo */
+@keyframes enterFromLeft {
     from {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
     to {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
-  
-  .logo {
-    animation: enterFromLeft 2s ease forwards;
-  }
+}
 
-
+/* Media Queries */
 @media screen and (max-width: 1050px) {
-    .nav-item a{
+    .nav-item a {
         font-size: 15px;
         margin: 0px 25px;
     }
-    
 }
-
 @media screen and (max-width: 950px) {
-    .nav-item a{
+    .nav-item a {
         margin: 0px 18px;
     }
-    
 }
-
 @media screen and (max-width: 768px) {
     .flexCEnter {
         padding: 0.5pc 0.5pc;
-    
+        justify-content: space-between; 
     }
-
     .ms-3 {
-        margin-left: 0 !important; 
+        margin-left: 0 !important;
     }
     .nav-item a {
         margin: 0px 4px !important;
@@ -122,57 +110,46 @@ background-color: white;
         padding: 0.7pc 0.5pc;
     }
 }
-
-
 @media screen and (max-width: 600px) {
     .navbar-toggler {
         border: none !important;
-      }
-      .banner {
+    }
+    .banner {
         margin-top: 50px;
     }
     .contactNavbarButton {
         display: none !important;
-      }
-
-      .navbar-toggler-icon{
+    }
+    .navbar-toggler-icon {
         margin-left: 330px;
     }
-    
 }
-
-@media screen and (max-width: 425px){
-
-    .navbar-toggler-icon{
+@media screen and (max-width: 425px) {
+    .navbar-toggler-icon {
         margin-left: 230px;
     }
     .flexCEnter {
         padding: 1pc 2pc;
     }
 }
-
-@media screen and (max-width: 393px){
-    .navbar-toggler-icon{
+@media screen and (max-width: 393px) {
+    .navbar-toggler-icon {
         margin-left: 220px;
     }
     .flexCEnter {
         padding: 1pc 1.5pc;
     }
-
 }
-
 @media screen and (max-width: 375px) {
-    .navbar-toggler-icon{
+    .navbar-toggler-icon {
         margin-left: 200px;
     }
-    
 }
-
 @media screen and (max-width: 360px) {
-    .navbar-toggler-icon{
+    .navbar-toggler-icon {
         margin-left: 180px;
     }
-    .navbar-toggler{
+    .navbar-toggler {
         border: none;
     }
 }
