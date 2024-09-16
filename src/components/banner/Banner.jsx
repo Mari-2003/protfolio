@@ -5,7 +5,7 @@ import './Banner.css';
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { FiMail } from "react-icons/fi";
-import bannerImg from '../../assets/bannerImg.jpg';
+import bannerImg from '../../assets/myPhoto2.jpg';
 import MariappanResume from '../../assets/MariappanResume.pdf';
 
 export const Banner = ({ theme }) => {
