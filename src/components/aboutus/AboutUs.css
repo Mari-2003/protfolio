@@ -100,6 +100,7 @@
 
 @media screen and (max-width: 768px){
   .about {
+    padding: 0.5pc 0.5pc;
     margin-top: 50px;
   }
   .desktop-About{
@@ -135,6 +136,7 @@
   line-height: 25px !important;
  } 
  .aboutSocialIcons {
+  padding: 0.5pc 1pc;
   width: 50%;
   margin-top: 20px;
  }

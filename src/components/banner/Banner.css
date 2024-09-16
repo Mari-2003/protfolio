@@ -182,12 +182,17 @@
  }
 
  @media screen and (max-width: 768px){
+  .banner {
+    margin-top: 100px;
+    padding: 0.5pc 0.5pc;
+}
   .bannerleft p {
     font-size: 16px !important;
   }
-  .banner {
-    margin-top: 100px;
+  .profileIcon {
+    margin-top: 50px;
   }
+
   .mobileBanner {
     display: none;
   }
@@ -197,7 +202,7 @@
 
  }
 
-@media screen and (max-width: 602px) {
+@media screen and (max-width: 600px) {
   .contentImage{
     margin-top: 100px;
   }
@@ -225,8 +230,9 @@
    }
 
    .bannerFooter {
-    display: flow;
-    padding: 1pc 1pc !important;
+    margin-top: 30px;
+    display: flex;
+    padding: 0.5pc 0.5pc !important;
 }
 .contactAboutBanner {
   display: contents;
@@ -235,7 +241,9 @@
   margin-right: 35px;
 }
 .contactSocialBanner{
-  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 }
 
@@ -260,6 +268,10 @@
 .heading h1 {
   font-size: 52px !important;
 }
+.bannerFooter {
+  display:block;
+  
+}
   
 }
 
@@ -272,11 +284,7 @@
     padding: 10px 30px !important;
 }
 .contactAboutBanner span {
-  font-size: 14px;
-  margin-right: 3px;
-}
-.bannerFooter {
-  padding: 10px 10px !important;
+  font-size: 11px;
 }
 .bannerFooter .bannerIcons {
   font-size: 20px;
@@ -330,7 +338,8 @@
   font-size: 23px;
 }
 .bannerFooter {
-  margin-top: 25px
+  margin-top: 25px;
+  padding: 0.5pc 0.3pc !important;
 }
   
 }

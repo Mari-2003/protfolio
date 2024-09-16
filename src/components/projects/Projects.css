@@ -41,6 +41,7 @@
 
 .arrowPostion{
     text-align: end;
+    margin-bottom: 10px;
 }
 
 .projectArrow{
@@ -75,6 +76,7 @@
 
 @media screen and (max-width: 768px){
     .projects {
+      padding: 0.5pc 0.5pc;
       margin-top: 50px;
     }
     .projectText h4 {
@@ -93,7 +95,6 @@
    
    @media screen and (max-width: 600px){
     .projectText{
-      padding: 0px !important;
       margin-top: 30px;
     }
     .projectText h4{
